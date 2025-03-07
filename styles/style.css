@@ -119,3 +119,35 @@ input {
   border: none;
   font-size: 1rem; /* antes 15px */
 }
+
+footer {
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto */
+  padding: 10px 0; /* Espaçamento interno */
+  margin-top: 40px; /* Espaçamento acima do footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Centralizar o conteúdo */
+  padding: 0 20px; /* Espaçamento interno */
+}
+
+.footer-links {
+  list-style: none; /* Remover marcadores da lista */
+  padding: 0; /* Remover padding padrão */
+  margin: 0; /* Remover margem padrão */
+  display: flex; /* Ativar Flexbox */
+  flex-direction: column; /* Colocar os itens em coluna (um embaixo do outro) */
+  align-items: center; /* Centralizar os links */
+}
+
+.footer-links li {
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove paddings */
+}
+
+
