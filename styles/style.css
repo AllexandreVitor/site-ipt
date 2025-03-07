@@ -1,3 +1,72 @@
+/* Estilo do botão do menu hambúrguer */
+#menu-toggle {
+  display: none; /* Oculta o botão por padrão */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#menu-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: rgb(34, 34, 34); /* Cor do ícone */
+}
+
+/* Estilo do menu de navegação */
+#main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  margin-left: 1rem;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+#main-nav ul li a:hover {
+  color: rgb(132, 14, 20);
+  transition: 0.3s all;
+}
+
+/* Estilo para telas pequenas (menu hambúrguer) */
+@media screen and (max-width: 768px) {
+  #menu-toggle {
+    display: block; /* Exibe o botão do menu */
+  }
+
+  #main-nav {
+    display: none; /* Oculta o menu por padrão */
+    position: absolute;
+    top: 100%; /* Posiciona o menu abaixo do header */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  #main-nav.active {
+    display: block; /* Exibe o menu quando ativo */
+  }
+
+  #main-nav ul {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 1rem;
+  }
+
+  #main-nav ul li {
+    margin: 0.5rem 0; /* Espaçamento entre os itens */
+  }
+}
+
+
 body {
   background-color: white;
   color: rgb(34, 34, 34);
@@ -7,12 +76,26 @@ body {
   padding: 1rem; /*antes 15px */
 }
 
-header {
+/* Container para o conteúdo do header */
+.header-container {
+  max-width: 1200px; /* Mesma largura máxima da body */
+  width: 100%; /* Ocupa 100% da largura disponível */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 1rem; /* Mesmo padding da body */
   display: flex;
-  /* flex-direction: row;*/
-  flex-wrap: wrap; /* permite o header quebrar para a proxima linha se houver necessidade */
   justify-content: space-between;
   align-items: center;
+}
+
+/* Header fixo */
+header {
+  position: fixed; /* Fixa o header no topo */
+  top: 0; /* Alinha o header no topo da página */
+  left: 0; /* Alinha o header à esquerda */
+  width: 100%; /* Faz o header ocupar toda a largura da tela */
+  background-color: white; /* Cor de fundo do header (ajuste conforme necessário) */
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar o header */
 }
 
 #title {
@@ -57,6 +140,7 @@ main {
   flex-direction: row;
   margin-top: 3rem; /* antes 50px */
   gap: 2rem; /* Adiciona espaçamento entre os elementos */
+  padding-top: 100px; /* espaçamento para não esconder o conteúdo */
 }
 
 h2 {

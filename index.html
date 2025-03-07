@@ -14,28 +14,50 @@
     />
     <title>IPT</title>
   </head>
-  <body>
-    <header>
-      <div id="title">
-        <h1><span id="paulo">Instituto</span> Paulo</h1>
-        <h1>de <span id="tarso">Tarso</span></h1>
-      </div>
 
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Serviço</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#" id="inscreva-se-btn">Já tem uma conta?</a></li>
-      </ul>
+  <body>
+    <script src="./scripts/script.js"></script>
+    <header>
+      <div class="header-container">
+        <div id="title">
+          <h1><span id="paulo">Instituto</span> Paulo</h1>
+          <h1>de <span id="tarso">Tarso</span></h1>
+        </div>
+
+        <!-- Ícone do menu hambúrguer -->
+        <button id="menu-toggle" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path
+              fill="currentColor"
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </button>
+
+        <!-- Menu de navegação -->
+        <nav id="main-nav">
+          <ul>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/ensino.html">Ensino</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#" id="inscreva-se-btn">Já tem uma conta?</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <aside>
         <h2>Educando na <span>Orientação</span> do Senhor!</h2>
         <p>
-          Decidir sobre a escola dos filhos é uma das escolhas mais significativas para pais e responsáveis. No Instituto Paulo de Tarso, combinamos tradição e inovação no ensino ao longo de gerações.
-          Nosso compromisso com a educação reflete uma convivência saudável e solidária, fundamentada em valores cristãos, éticos e acadêmicos. Junte-se ao IPT para transformar o mundo conosco, inspirando vidas, realizando sonhos e promovendo uma educação pautada na fé.
+          Decidir sobre a escola dos filhos é uma das escolhas mais
+          significativas para pais e responsáveis. No Instituto Paulo de Tarso,
+          combinamos tradição e inovação no ensino ao longo de gerações. Nosso
+          compromisso com a educação reflete uma convivência saudável e
+          solidária, fundamentada em valores cristãos, éticos e acadêmicos.
+          Junte-se ao IPT para transformar o mundo conosco, inspirando vidas,
+          realizando sonhos e promovendo uma educação pautada na fé.
         </p>
         <form>
           <input type="text" placeholder="Nome" />
@@ -54,9 +76,14 @@
 
     <footer>
       <div class="footer-content">
-        <p>&copy; 2025 Instituto Paulo de Tarso. Todos os direitos reservados.</p>
+        <p>
+          &copy; 2025 Instituto Paulo de Tarso. Todos os direitos reservados.
+        </p>
         <div class="footer-contact">
-          <p><span id="info_footer">Endereço:</span> Rua Arlinda Lopes dos Santos, 217 - Tabatinga, Camaragibe</p>
+          <p>
+            <span id="info_footer">Endereço:</span> Rua Arlinda Lopes dos
+            Santos, 217 - Tabatinga, Camaragibe
+          </p>
           <p><span id="info_footer">Telefone:</span> (81) 97314-9091</p>
         </div>
       </div>
