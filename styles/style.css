@@ -60,12 +60,13 @@ main {
 
 h2 {
   font-size: 3.2rem; /* antes 56px */
-  line-height: 10px;
+  max-width: 30rem; /* antes 500px largura máxima do paragrafo até quebrar a linha.*/
+  line-height: 45px;
   font-family: poppinsmedium;
 }
 
 span {
-  color: rgb(132, 14, 201);
+  color: rgb(132, 14, 20);
 }
 
 #paulo {
