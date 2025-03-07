@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(34, 34, 34);
-  color: white;
+  background-color: white;
+  color: rgb(34, 34, 34);
   font-family: poppinsregular;
   max-width: 1200px;
   margin: 0 auto; /* Se concentre tudo no meio */
@@ -18,6 +18,7 @@ header {
 #title {
   flex-direction: column;
   line-height: 10px;
+  font-family: poppinsmedium;
 }
 
 li {
@@ -27,7 +28,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(34, 34, 34);
 }
 a:hover {
   /* Efeito quando mouse passa em cima */
@@ -116,15 +117,18 @@ input {
   height: 1rem; /* antes 20px */
   padding: 1rem; /* antes 15px */
   border-radius: 15px;
-  border: none;
+  border: 2px solid rgb(132, 14, 20);
   font-size: 1rem; /* antes 15px */
 }
 
 footer {
-  background-color: #333; /* Cor de fundo do footer */
-  color: #fff; /* Cor do texto */
+  background-color: rgb(246, 245, 245); /* Cor de fundo do footer */
+  color: rgb(34, 34, 34); /* Cor do texto */
   padding: 10px 0; /* Espaçamento interno */
   margin-top: 40px; /* Espaçamento acima do footer */
+}
+#info_footer {
+  font-family: poppinsbold
 }
 
 .footer-content {
