@@ -4,12 +4,13 @@ body {
   font-family: poppinsregular;
   max-width: 1200px;
   margin: 0 auto; /* Se concentre tudo no meio */
-  padding: 15px;
+  padding: 1rem; /*antes 15px */
 }
 
 header {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;*/
+  flex-wrap: wrap; /* permite o header quebrar para a proxima linha se houver necessidade */
   justify-content: space-between;
   align-items: center;
 }
@@ -21,7 +22,7 @@ header {
 
 li {
   display: inline-block;
-  margin: 20px;
+  margin: 1rem; /* antes 20px */
 }
 
 a {
@@ -36,7 +37,7 @@ a:hover {
 
 #inscreva-se-btn {
   border: 2px solid rgb(132, 14, 20);
-  padding: 10px;
+  padding: 0.6rem 1.5rem; /* antes 10px */
   border-radius: 20px;
 }
 
@@ -47,16 +48,18 @@ a:hover {
 
 h1 {
   font-weight: 200;
+  font-size: 2.5rem; /* linha nova */
 }
 
 main {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 3rem; /* antes 50px */
+  gap: 2rem; /* Adiciona espaçamento entre os elementos */
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 3.2rem; /* antes 56px */
   line-height: 10px;
   font-family: poppinsmedium;
 }
@@ -72,37 +75,40 @@ span {
 
 p {
   line-height: 20px;
-  max-width: 500px; /* largura máxima do paragrafo até quebrar a linha.*/
+  max-width: 30rem; /* antes 500px largura máxima do paragrafo até quebrar a linha.*/
   font-family: poppinslight;
 }
 
 img {
-  width: 580px;
+  width: 100%; /* antes 580px */
+  max-width: 35rem; /* linah nova */
+  height: auto; /* linha nova */
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 70%; /* 70% do tamanho do elemento pai dele */
+  gap: 0.5rem; /* Adiciona espaço entre os campos */
 }
 
 form [type="submit"] {
-    height: 50px;
-    width: 50%;
-    background-color: rgb(132, 14, 20);
-    color: white;
-    font-weight: bold
+  height: 3rem; /* antes 50px */
+  width: 50%;
+  background-color: rgb(132, 14, 20);
+  color: white;
+  font-weight: bold;
 }
 
 form [type="submit"]:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 input {
-   margin-top: 20px;
-   height: 20px;
-   padding: 15px;
-   border-radius: 15px;
-   border: none;
-   font-size: 15px;
+  margin-top: 1rem; /* antes 20px */
+  height: 1rem; /* antes 20px */
+  padding: 1rem; /* antes 15px */
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem; /* antes 15px */
 }
