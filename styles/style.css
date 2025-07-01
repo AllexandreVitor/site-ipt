@@ -70,9 +70,14 @@ body {
   background-color: white;
   color: rgb(34, 34, 34);
   font-family: poppinsregular;
+  margin: 0 ; /* todas as margem com 0 */
+  padding: 0; /* sem espaçamento interno */
+}
+
+.wrapper-style-body {
   max-width: 1200px;
-  margin: 0 auto; /* Se concentre tudo no meio */
-  padding: 1rem; /*antes 15px */
+  margin: 0 auto; /* Para centralizar o conteúdo horizontalmente*/
+  padding: 0;
 }
 
 /* Container para o conteúdo do header */
@@ -208,7 +213,7 @@ footer {
   background-color: rgb(246, 245, 245); /* Cor de fundo do footer */
   color: rgb(34, 34, 34); /* Cor do texto */
   padding: 10px 0; /* Espaçamento interno */
-  margin-top: 40px; /* Espaçamento acima do footer */
+  margin-top: 0; /* Espaçamento acima do footer */
 }
 #info_footer {
   font-family: poppinsbold;

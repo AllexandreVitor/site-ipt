@@ -3,82 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Paulo de Tarso</title>
+
+    <!-- Estilos -->
     <link href="./styles/style.css" rel="stylesheet" />
     <link href="./styles/fonts.css" rel="stylesheet" />
     <link href="./styles/media.css" rel="stylesheet" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       href="./components/images/Logo IPT - fundo vinho.PNG"
       type="image/x-icon"
       sizes="16x16"
     />
-    <title>IPT</title>
   </head>
 
   <body>
     <!-- Script para controle do menu hamburguer -->
     <script src="./scripts/script.js"></script>
 
-    <!-- Header -->
-    <header>
-      <div class="header-container">
-        <!-- Título do site -->
-        <div id="title">
-          <h1><span id="paulo">Instituto</span> Paulo</h1>
-          <h1>de <span id="tarso">Tarso</span></h1>
+    <!-- wrapper com configs especiais-->>
+    <div class="wrapper-style-body">
+      <!-- Header -->
+      <header>
+        <div class="header-container">
+          <!-- Título do site -->
+          <div id="title">
+            <h1>
+              <label id="instituto">Instituto</label>
+              <label><span id="paulo">Paulo</span> de</label>
+              <span id="tarso">Tarso</span></h1>
+            </h1>
+          </div>
+
+          <!-- Ícone do menu hambúrguer -->
+          <button id="menu-toggle" aria-label="Abrir menu">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path
+                fill="currentColor"
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+          </button>
+
+          <!-- Menu de navegação -->
+          <nav id="main-nav">
+            <ul>
+              <li><a href="/index.html">Início</a></li>
+              <li><a href="/ensino.html">Ensino</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#" id="inscreva-se-btn">Já tem uma conta?</a></li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <!-- Ícone do menu hambúrguer -->
-        <button id="menu-toggle" aria-label="Abrir menu">
-          <svg viewBox="0 0 24 24" width="24" height="24">
-            <path
-              fill="currentColor"
-              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-            />
-          </svg>
-        </button>
+      <!-- Conteúdo principal -->
+      <main>
+        <aside>
+          <h2>Educando na <span>Orientação</span> do Senhor!</h2>
+          <p>
+            Decidir sobre a escola dos filhos é uma das escolhas mais
+            significativas para pais e responsáveis. No Instituto Paulo de Tarso,
+            combinamos tradição e inovação no ensino ao longo de gerações. Nosso
+            compromisso com a educação reflete uma convivência saudável e
+            solidária, fundamentada em valores cristãos, éticos e acadêmicos.
+            Junte-se ao IPT para transformar o mundo conosco, inspirando vidas,
+            realizando sonhos e promovendo uma educação pautada na fé.
+          </p>
+          <form>
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="E-mail" />
+            <input type="submit" value="Enviar >" />
+          </form>
+        </aside>
 
-        <!-- Menu de navegação -->
-        <nav id="main-nav">
-          <ul>
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="/ensino.html">Ensino</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#" id="inscreva-se-btn">Já tem uma conta?</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Conteúdo principal -->
-    <main>
-      <aside>
-        <h2>Educando na <span>Orientação</span> do Senhor!</h2>
-        <p>
-          Decidir sobre a escola dos filhos é uma das escolhas mais
-          significativas para pais e responsáveis. No Instituto Paulo de Tarso,
-          combinamos tradição e inovação no ensino ao longo de gerações. Nosso
-          compromisso com a educação reflete uma convivência saudável e
-          solidária, fundamentada em valores cristãos, éticos e acadêmicos.
-          Junte-se ao IPT para transformar o mundo conosco, inspirando vidas,
-          realizando sonhos e promovendo uma educação pautada na fé.
-        </p>
-        <form>
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="E-mail" />
-          <input type="submit" value="Enviar >" />
-        </form>
-      </aside>
-
-      <article>
-        <img
-          src="./components/images/77d0a7c454e658833800528e748edbe9.png"
-          alt="mulher-roxa"
-        />
-      </article>
-    </main>
-
+        <article>
+          <img
+            src="./components/images/77d0a7c454e658833800528e748edbe9.png"
+            alt="mulher-roxa"
+          />
+        </article>
+      </main>
+    </div>
     <!-- Rodapé -->
     <footer>
       <div class="footer-content">
