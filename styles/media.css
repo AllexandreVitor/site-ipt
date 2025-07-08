@@ -5,7 +5,7 @@
     align-items: center; /* linha nova */
   }
   body{
-    background:red;
+    background: red;
   }
   main {
     flex-direction: column;
