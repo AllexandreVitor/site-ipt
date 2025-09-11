@@ -97,6 +97,30 @@ header {
   top: 0; /* Alinha o header no topo da página */
   left: 0; /* Alinha o header à esquerda */
   width: 100%; /* Faz o header ocupar toda a largura da tela */
+
+  padding: 0 20px;
+  
+  & img {
+    width: 100px;
+  }
+
+  & #container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    
+    & nav {
+      width: 90vw;
+
+      & ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+
   background-color: white; /* Cor de fundo do header (ajuste conforme necessário) */
   z-index: 1000; /* Garante que o header fique acima de outros elementos */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar o header */
