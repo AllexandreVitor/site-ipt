@@ -1,69 +1,48 @@
-/* Estilo do botão do menu hambúrguer */
-#menu-toggle {
-  display: none; /* Oculta o botão por padrão */
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
 
-#menu-toggle svg {
-  width: 24px;
-  height: 24px;
-  fill: rgb(34, 34, 34); /* Cor do ícone */
-}
+header {
+  position: sticky; /* Fixa o header no topo */
+  top: 0; /* Alinha o header no topo da página */
 
-/* Estilo do menu de navegação */
-#main-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#main-nav ul li {
-  margin-left: 1rem;
-}
-
-#main-nav ul li a {
-  text-decoration: none;
-  color: rgb(34, 34, 34);
-}
-
-#main-nav ul li a:hover {
-  color: rgb(132, 14, 20);
-  transition: 0.3s all;
-}
-
-/* Estilo para telas pequenas (menu hambúrguer) */
-@media screen and (max-width: 768px) {
-  #menu-toggle {
-    display: block; /* Exibe o botão do menu */
+  width: 92vw; /* Faz o header ocupar toda a largura da tela */
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 20px;
+  
+  & .logo img {
+    width: 100px;
   }
 
-  #main-nav {
-    display: none; /* Oculta o menu por padrão */
-    position: absolute;
-    top: 100%; /* Posiciona o menu abaixo do header */
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+  & #container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95vw;
+    
+    & nav {
+      width: 100%;
+
+      & ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+
+        & li {
+          position: relative;
+          line-height: 15px;
+        }
+      }
+    }
+
+    & button {
+      height: calc(100% + 3px);
+      width: calc(100% + 3px);
+    }
   }
 
-  #main-nav.active {
-    display: block; /* Exibe o menu quando ativo */
-  }
+  background-color: white;
+  z-index: 10; /* Garante que o header fique acima de outros elementos */
+  box-shadow: 0 2px 5px -6px rgba(0, 0, 0, 0.9); /* Adiciona uma sombra para destacar o header */
 
-  #main-nav ul {
-    flex-direction: column; /* Alinha os itens verticalmente */
-    padding: 1rem;
-  }
-
-  #main-nav ul li {
-    margin: 0.5rem 0; /* Espaçamento entre os itens */
-  }
 }
 
 body {
@@ -74,272 +53,26 @@ body {
   padding: 0; /* sem espaçamento interno */
 }
 
+.btn {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(34, 34, 34);
+  max-width: 100%;
+  border-radius: 30px;
+  padding: 14px 35px;
+  width: max-content;
+  border: 1.5px solid rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  background-image: linear-gradient(90deg, rgb(78, 0, 17) 0%, rgb(145, 4, 35) 100%);
+  color: white;
+}
+
 .wrapper-style-body {
-  max-width: 1200px;
   margin: 0 auto; /* Para centralizar o conteúdo horizontalmente*/
   padding: 1rem; 
 }
 
-/* Container para o conteúdo do header */
-.header-container {
-  max-width: 1200px; /* Mesma largura máxima da body */
-  width: 100%; /* Ocupa 100% da largura disponível */
-  margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 0 1rem; /* Mesmo padding da body */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-/* Header fixo */
-header {
-  position: fixed; /* Fixa o header no topo */
-  top: 0; /* Alinha o header no topo da página */
-  left: 0; /* Alinha o header à esquerda */
-  width: 100%; /* Faz o header ocupar toda a largura da tela */
 
-  padding: 0 20px;
   
-  & img {
-    width: 100px;
-  }
-
-  & #container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95vw;
-    
-    & nav {
-      width: 90vw;
-
-      & ul {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-  }
-
-
-  background-color: white; /* Cor de fundo do header (ajuste conforme necessário) */
-  z-index: 1000; /* Garante que o header fique acima de outros elementos */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar o header */
-}
-
-#title {
-  flex-direction: column;
-  line-height: 10px;
-  font-family: poppinsmedium;
-}
-
-li {
-  display: inline-block;
-  margin: 1rem; /* antes 20px */
-}
-
-a {
-  text-decoration: none;
-  color: rgb(34, 34, 34);
-}
-a:hover {
-  /* Efeito quando mouse passa em cima */
-  color: rgb(132, 14, 20);
-  transition: 0.3s all; /* Para demorar até fazer o efeito completo */
-}
-
-#inscreva-se-btn {
-  border: 2px solid rgb(132, 14, 20);
-  padding: 0.6rem 1.5rem; /* antes 10px */
-  border-radius: 20px;
-}
-
-#inscreva-se-btn:hover {
-  background-color: rgb(132, 14, 20);
-  color: white;
-}
-
-h1 {
-  font-weight: 200;
-  font-size: 2.5rem; /* linha nova */
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  margin-top: 3rem; /* antes 50px */
-  gap: 2rem; /* Adiciona espaçamento entre os elementos */
-  padding-top: 100px; /* espaçamento para não esconder o conteúdo */
-}
-
-h2 {
-  font-size: 3.2rem; /* antes 56px */
-  max-width: 30rem; /* antes 500px largura máxima do paragrafo até quebrar a linha.*/
-  line-height: 45px;
-  font-family: poppinsmedium;
-}
-
-#paulo {
-  color: rgb(132, 14, 20);
-  font-family: poppinsbold;
-}
-
-#tarso {
-  color: rgb(132, 14, 20);
-  font-family: poppinsbold;
-}
-
-p {
-  line-height: 20px;
-  max-width: 30rem; /* antes 500px largura máxima do paragrafo até quebrar a linha.*/
-  font-family: poppinslight;
-  text-align: justify;
-}
-
-img {
-  width: 100%; /* antes 580px */
-  max-width: 35rem; /* linah nova */
-  height: auto; /* linha nova */
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 70%; /* 70% do tamanho do elemento pai dele */
-  gap: 0.5rem; /* Adiciona espaço entre os campos */
-}
-
-form [type="submit"] {
-  height: 3rem; /* antes 50px */
-  width: 50%;
-  background-color: rgb(132, 14, 20);
-  color: white;
-  font-weight: bold;
-}
-
-form [type="submit"]:hover {
-  cursor: pointer;
-}
-
-input {
-  margin-top: 1rem; /* antes 20px */
-  height: 1rem; /* antes 20px */
-  padding: 1rem; /* antes 15px */
-  border-radius: 15px;
-  border: 2px solid rgb(132, 14, 20);
-  font-size: 1rem; /* antes 15px */
-}
-
-footer {
-  background: linear-gradient(
-      rgba(132, 14, 20, 0.95)),
-    url(../components/images/image-footer.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff; /* Cor do texto */
-  margin-top: 0; /* Espaçamento acima do footer */
-  border-radius: 10px 10px 0 0;
-  padding: 0 0 20px 0; /* Espaçamento inferior */
-  font-family: Poppins, sans-serif;
-  font-size: 15px;
-}
-
-.footer-structure {
-  max-width: 1200px;
-  padding: 0 1vw; /* não encostar na extremidade */
-  margin: 0 auto; /* Centralizar o conteúdo */
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-between;
-  margin: 0 auto; /* Centralizar o conteúdo */
-  padding: 20px; /* Espaçamento interno */
-  max-width: 1200px;
-}
-
-.footer-content-left {
-  display:grid;
-  width: 25%;
-  font-family: Poppins, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  padding-right: 40px;
-}
-
-.footer-content-left img {
-  width: auto;
-  height: calc(120px + 2vw);
-}
-
-.footer-content-center {
-
-}
-
-#info-contact {
-  font-family: poppinsbold;
-  font-size: 18px;
-  font-weight:800;
-}
-
-.info-footer {
-  font-family: poppinsbold;
-}
-.social-media {
-  display:grid;
-  gap: 20px;
-  align-items: center;
-}
-
-.btn-icon {
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 0;
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
-	background-color: #fff;
-	border: 1px solid rgb(132, 14, 20);
-	box-shadow: 10px 10px 20px rgba(29, 29, 27, 0.25);
-	transition: border-color #fff, background-color rgb(132, 14, 20);
-
-	svg {
-		position: relative;
-		width: 23px;
-		height: auto;
-		max-height: 23px;
-	}
-}
-
-.footer-links {
-  list-style: none; /* Remover marcadores da lista */
-  padding: 0; /* Remover padding padrão */
-  margin: 0; /* Remover margem padrão */
-  display: flex; /* Ativar Flexbox */
-  flex-direction: column; /* Colocar os itens em coluna (um embaixo do outro) */
-  align-items: center; /* Centralizar os links */
-}
-
-.footer-links li {
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove paddings */
-}
-
-.info-below-line {
-  display: flex;
-  font-size: 12px;
-  font-weight: 200;
-  justify-content: space-between;
-}
-.info-below-line p {
-  margin: 0
-}
-
-.info-below-line #privacy {
-  text-transform: uppercase;
-  color:white;
-}
