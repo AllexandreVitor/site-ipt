@@ -7,7 +7,9 @@ header {
   margin: 0 auto;
   justify-content: center;
   padding: 0 20px;
-  
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   & .logo img {
     width: 100px;
   }
@@ -29,6 +31,7 @@ header {
         & li {
           position: relative;
           line-height: 15px;
+          margin-right: 20px;
         }
       }
     }
@@ -51,7 +54,14 @@ body {
   font-family: poppinsregular;
   margin: 0 ; /* todas as margem com 0 */
   padding: 0; /* sem espaçamento interno */
+
 }
+
+main {
+  width: 92vw;
+  margin: 0 auto;
+}
+
 
 .btn {
   display: block;
