@@ -1,8 +1,14 @@
-// Seleciona o botão do menu e o menu de navegação
-const menuToggle = document.getElementById('menu-toggle');
-const mainNav = document.getElementById('main-nav');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const header = document.querySelector('header');
 
-// Adiciona um evento de clique ao botão do menu
-menuToggle.addEventListener('click', () => {
-  mainNav.classList.toggle('active'); // Alterna a classe "active" no menu
+  menuToggle.addEventListener('click', function () {
+    // Alterna a visibilidade do menu
+    navMenu.classList.toggle('active');
+    navMenu.classList.toggle('hidden');
+
+    // Alterna classe no header para controle de ícones
+    header.classList.toggle('menu-open');
+  });
 });

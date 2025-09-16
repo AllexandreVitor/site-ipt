@@ -9,7 +9,8 @@ header {
   padding: 0 20px;
 
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
+
   & .logo img {
     width: 100px;
   }
@@ -39,6 +40,7 @@ header {
     & button {
       height: calc(100% + 3px);
       width: calc(100% + 3px);
+      cursor: pointer;
     }
   }
 
@@ -76,6 +78,10 @@ main {
   border-radius: 30px;
   background-image: linear-gradient(90deg, rgb(78, 0, 17) 0%, rgb(145, 4, 35) 100%);
   color: white;
+}
+
+.menu-toggle {
+  
 }
 
 .wrapper-style-body {
